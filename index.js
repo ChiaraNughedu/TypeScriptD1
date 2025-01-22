@@ -51,3 +51,8 @@ var myCar = {
     fuel: "Benzina"
 };
 console.log(myCar);
+var responseString = {
+    success: true,
+    data: "Finale buono :)"
+};
+console.log(responseString);

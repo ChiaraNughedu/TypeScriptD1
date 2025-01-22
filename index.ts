@@ -99,4 +99,22 @@ const myCar: Auto = {
   
   console.log(myCar);  
 
+ // 18 
+ // i Generics sono dei tipi passati come argomento per un'interfaccia. rendono l'interfaccia riutilizzabile
+ 
+ // 19
+ // si, è possibile
+
+ // 20
+ interface ApiResponse<T> {
+    success: boolean;
+    data: T;
+    message?: string; 
+  }
+
+ const responseString: ApiResponse<string> = {
+    success: true,
+    data: "Finale buono :)"
+  };
   
+  console.log(responseString);
